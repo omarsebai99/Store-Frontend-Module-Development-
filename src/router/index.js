@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue'; // Adjust path as per your project structure
-import ProductTable from '../components/ProductTable.vue'; // Adjust path as per your project structure
-import EditProductForm from '../components/EditProductForm.vue'; // Import EditProductForm component
+import Home from '../views/Home.vue';
+import ProductTable from '../components/ProductTable.vue';
+import EditProductForm from '../components/EditProductForm.vue';
+import CreateProductForm from '@/components/CreateProductForm.vue';
 
 const routes = [
 {
@@ -15,9 +16,14 @@ name: 'ProductTable',
 component: ProductTable
 },
 {
-path: '/edit-product/:id', // Dynamic route parameter for product ID
+path: '/edit-product/:id',
 name: 'EditProductForm',
 component: EditProductForm
+},
+{
+path: '/create',
+name: 'CreateProductForm',
+component: CreateProductForm
 }
 ];
 
