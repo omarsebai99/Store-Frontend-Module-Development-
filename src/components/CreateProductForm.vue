@@ -87,7 +87,7 @@ input{
 .form-control {
     width: 100%;
     padding: 3px;
-    font-size: 1rem;
+    font-size: larger;
     border: 1px solid #ccc;
     border-radius: 4px;
     transition: border-color 0.2s ease;
